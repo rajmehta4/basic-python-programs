@@ -1,5 +1,5 @@
 # basic-python-programs
-I'm practicing basic programming problems. Python code is so clean, I love it :D
+I'm practicing basic programming problems. Python code is so clean, I love it :smile:
 
 Here is the [list of problem statements](https://adriann.github.io/programming_problems.html).
 
