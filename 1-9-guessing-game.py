@@ -48,7 +48,7 @@ while True:
 
 	elif(inp == num):
 		print("Woohoo! You've done it! You guessed the number perfectly correct :D")
-		print("It took you", count, "try" if (count==1) else "tries", "to guess it right!")
+		print("It took you {} {} to guess it right!".format(count, "try" if(count==1) else "tries"))
 		sys.exit()
 
 	else:
