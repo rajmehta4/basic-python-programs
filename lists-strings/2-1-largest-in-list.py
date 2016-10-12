@@ -1,19 +1,22 @@
+# the following code works all - positive/negative integers and positive/negative floating point numbers
+
 import sys
 
 inp = []
-flag = 0
 
-for item in input().split():
+for num in input().split():
 
-	for i in item:
+	flag = 0
+
+	for i in num:
 		if(i == '.'):
 			flag = 1
 			break
 	try:		
 		if(flag == 1):
-			inp.append(float(item))
+			inp.append(float(num))
 		else:
-			inp.append(int(item))
+			inp.append(int(num))
 
 	except ValueError:
 		print("I asked you to enter only numbers, dumb-ass! :P")
@@ -21,6 +24,10 @@ for item in input().split():
 
 # The above code ensures that only integers and floats are provided as input
 
-for i in range(0, ):
+for i in range(1, len(inp)):
+	if(inp[0] < inp[i]):
+		inp[0] = inp[i]
+
+largest = inp[0]
 
 print("The largest number in your list is {}!".format(largest))
